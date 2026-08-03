@@ -8,14 +8,10 @@
   <!-- Zentrale Styles -->
   <link rel="stylesheet" href="https://zidurecords.github.io/Assets/css/landing.css">
 
-  <!-- Zentrale Scripts -->
-  <script src="https://zidurecords.github.io/Assets/js/pixel.js"></script>
-  <script src="https://zidurecords.github.io/Assets/js/colors.js"></script>
-  <script src="https://zidurecords.github.io/Assets/js/consent.js"></script>
-
-  <!-- Album-spezifische Variablen -->
+  <!-- Album-spezifische Konfiguration -->
   <script>
     const SONG_TITLE = "Antes Da Voz";
+    const ALBUM_DESCRIPTION = ""; // <--- HIER DEIN TEXT
     const COVER_IMG = "AntesDaVoz.jpg";
 
     const SPOTIFY_LINK   = "https://open.spotify.com/intl-de/album/37fq3GZMj0DS4fjb5y0aUV";
@@ -30,28 +26,26 @@
     const SHOW_TIKTOK    = false;
     const SHOW_PRESAVE   = false;    
   </script>
-
-  <!-- Größen -->
-  <script src="https://zidurecords.github.io/Assets/js/config.js"></script>
-  <!-- landing.js MUSS zuletzt kommen -->
-  <script src="https://zidurecords.github.io/Assets/js/landing.js" defer></script>
 </head>
 
 <body>
 
+  <!-- HTML Platzhalter -->
   <h1 id="song-title" class="glow"></h1>
+  
+  <!-- NEU: Beschreibung für das Album -->
+  <p id="album-description" class="album-desc"></p>
 
   <img id="cover-img" class="cover" alt="Album Cover">
-
   <div id="platforms"></div>
 
-  <div id="consent-dialog">
-    <div class="consent-box">
-      This site uses tracking (Meta & TikTok Pixel).
-      <br><br>
-      <button onclick="acceptConsent()">Confirm</button>
-    </div>
-  </div>
+  <!-- Zentrale Skripte -->
+  <script src="https://zidurecords.github.io/Assets/js/config.js"></script>
+  <script src="https://zidurecords.github.io/Assets/js/pixel.js"></script>
+  <script src="https://zidurecords.github.io/Assets/js/colors.js"></script>
+  <script src="https://zidurecords.github.io/Assets/js/consent.js"></script>
+  <script src="https://zidurecords.github.io/Assets/js/legal.js"></script>
+  <script src="https://zidurecords.github.io/Assets/js/landing.js"></script>
 
 </body>
 </html>
