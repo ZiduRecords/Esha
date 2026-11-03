@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="data:,">
+  <title>Hörprobe: A Porta Aberta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Externe Styles (wie in deinen bestehenden Projekten) -->
+  <link rel="stylesheet" href="https://zidurecords.github.io/Assets/css/landing.css">
+
+  <style>
+    /* Zusätzliches Styling für den Teaser-Player */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .cover {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
+    }
+    .artist-name {
+      font-size: 1.1rem;
+      color: #a0a0a0;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .glow {
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .album-desc {
+      font-size: 0.95rem;
+      color: #cccccc;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+    .player-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .player-box p {
+      margin-top: 0;
+      font-size: 0.9rem;
+      color: #b3b3b3;
+    }
+    audio {
+      width: 100%;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Künstlername -->
+    <div class="artist-name">Esha Alto</div>
+
+    <!-- Songtitel -->
+    <h1 id="song-title" class="glow">A Porta Aberta</h1>
+    
+    <!-- Beschreibung des Liedes -->
+    <p id="album-description" class="album-desc">
+      Hör hier exklusiv vorab in die neue Single rein. Ein emotionaler Fado voller Sehnsucht und akustischer Tiefe.
+    </p>
+
+    <!-- Coverimage -->
+    <img id="cover-img" class="cover" src="APortaAbertaAlbumCover.jpg" alt="Album Cover">
+
+    <!-- Audioplayer Sektion -->
+    <div class="player-box">
+      <p>Exklusive Hörprobe (Teaser)</p>
+      <audio controls controlsList="nodownload" preload="none">
+        <source src="dein-song-teaser.mp3" type="audio/mpeg">
+        Dein Browser unterstützt das Audio-Element nicht.
+      </audio>
+    </div>
+  </div>
+
+</body>
+</html>
